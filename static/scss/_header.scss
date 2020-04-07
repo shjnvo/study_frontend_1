@@ -1,0 +1,21 @@
+header {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 40px;
+  img {
+    width: 225px;
+  }
+  ul {
+    display: inline-flex;
+    width: 100%;
+    li {
+      margin-left: 40px;
+    }
+  }
+  .userLogin {
+    margin-left: 30px;
+    font-size: 30px;
+    color: #dedcdc
+  }
+}

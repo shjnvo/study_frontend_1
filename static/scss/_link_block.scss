@@ -1,0 +1,38 @@
+.link-block {
+  display: flex;
+
+  .link-list {
+    width: 100%;
+    display: inline-flex;
+
+    .link-item {
+      display: flex;
+      padding: 10px;
+      margin: 0 20px 0 0;
+      cursor: pointer;
+      width: calc((100% - 60px)/4);
+      border: 1px solid $gree;
+      background: $gree;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      &:nth-of-type(4n){
+        margin: 0;
+      }
+
+      img {
+        width: 50px;
+        margin-left: 20px;
+      }
+
+      p {
+        margin: auto;
+        color: white;
+        font-weight: bold;
+
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

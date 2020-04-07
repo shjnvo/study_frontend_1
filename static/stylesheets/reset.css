@@ -1,0 +1,539 @@
+/* line 5, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_header.scss */
+header {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* line 6, ../scss/_header.scss */
+header img {
+  width: 225px;
+}
+/* line 9, ../scss/_header.scss */
+header ul {
+  display: inline-flex;
+  width: 100%;
+}
+/* line 12, ../scss/_header.scss */
+header ul li {
+  margin-left: 40px;
+}
+/* line 16, ../scss/_header.scss */
+header .userLogin {
+  margin-left: 30px;
+  font-size: 30px;
+  color: #dedcdc;
+}
+
+/* line 1, ../scss/_footer.scss */
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 5, ../scss/_footer.scss */
+.footer-inner .footer-list {
+  width: calc(100%/4);
+  color: #535353;
+}
+/* line 9, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-intro .description {
+  text-align: justify;
+}
+/* line 14, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-social img {
+  width: 40px;
+  margin-right: 20px;
+  filter: grayscale(100%);
+}
+/* line 19, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-social img:hover {
+  filter: none;
+}
+/* line 25, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-list-category {
+  line-height: 2.5em;
+  padding-left: 20px;
+}
+/* line 29, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-list-category a {
+  text-decoration: none;
+  color: black;
+}
+/* line 35, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-contact {
+  line-height: 2.5em;
+  padding-left: 20px;
+}
+/* line 40, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-contact-item {
+  width: 100%;
+  display: inline-block;
+}
+/* line 44, ../scss/_footer.scss */
+.footer-inner .footer-list .footer-contact-item .fa {
+  width: 20px;
+  margin-right: 20px;
+}
+/* line 50, ../scss/_footer.scss */
+.footer-inner .footer-list h1 {
+  padding-top: 70px;
+  line-height: 1.2em;
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  border-bottom: 3px solid #058305;
+  display: inline-block;
+}
+
+/* line 2, ../scss/_search_box.scss */
+main section {
+  position: relative;
+  width: 100%;
+}
+/* line 6, ../scss/_search_box.scss */
+main section .search-image-block_cover {
+  background: url("../images/hinh_6.jpg") center center no-repeat;
+  height: 450px;
+  background-size: cover;
+  opacity: 0.8;
+}
+/* line 12, ../scss/_search_box.scss */
+main section .search-inner {
+  width: 70%;
+  height: 200px;
+  background: #ffffff;
+  margin: auto;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 24, ../scss/_search_box.scss */
+main section .search-inner form {
+  margin-top: 55px;
+}
+/* line 28, ../scss/_search_box.scss */
+main section .search-input {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  height: 40px;
+}
+/* line 35, ../scss/_search_box.scss */
+main section .search-input input:focus {
+  outline: none;
+}
+/* line 39, ../scss/_search_box.scss */
+main section .search-input input {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #058305;
+  padding-left: 15px;
+}
+/* line 46, ../scss/_search_box.scss */
+main section .search-input button:hover {
+  opacity: 0.8;
+}
+/* line 50, ../scss/_search_box.scss */
+main section .search-input button {
+  width: 25%;
+  background: #058305;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #058305;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 59, ../scss/_search_box.scss */
+main section .search_advance {
+  display: flex;
+}
+/* line 62, ../scss/_search_box.scss */
+main section .search_advance .search_advance_item {
+  margin: auto;
+  font-weight: bold;
+}
+/* line 67, ../scss/_search_box.scss */
+main section .search_advance .search_advance_item:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  left: 10px;
+  top: -9px;
+  position: relative;
+  border: 2px solid;
+  border-color: #058305 #058305 transparent transparent;
+  transform: translateY(50%) rotate(135deg);
+}
+
+/* line 2, ../scss/_article_block.scss */
+.article-block .article-title {
+  font-size: 1.5em;
+  border-bottom: 3px solid #058305;
+  display: inline-block;
+}
+/* line 7, ../scss/_article_block.scss */
+.article-block .article-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 11, ../scss/_article_block.scss */
+.article-block .article-list .article-item-inner {
+  padding: 10px;
+  background: #f7f7f9;
+}
+/* line 17, ../scss/_article_block.scss */
+.article-block .article-list .article-item:nth-of-type(4n) {
+  margin: 0 0 30px 0;
+}
+/* line 21, ../scss/_article_block.scss */
+.article-block .article-list .article-item {
+  margin: 0 30px 30px 0;
+  width: calc((100% - 90px)/4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 27, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-pic {
+  position: relative;
+  height: 200px;
+}
+/* line 31, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-pic span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  background-color: #058305;
+  color: white;
+}
+/* line 40, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-pic:hover {
+  opacity: 0.7;
+}
+/* line 45, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-title {
+  opacity: 0.7;
+  line-height: 1.2em;
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* line 53, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-info {
+  margin-bottom: 10px;
+}
+/* line 56, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-info sup {
+  vertical-align: super;
+  font-size: 70%;
+}
+/* line 60, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-info .article-item-info__acreage {
+  font-weight: bold;
+}
+/* line 64, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-info .article-item-info__district {
+  float: right;
+  color: #058305;
+}
+/* line 70, ../scss/_article_block.scss */
+.article-block .article-list .article-item a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 75, ../scss/_article_block.scss */
+.article-block .article-list .article-item .article-item-icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  opacity: 0.7;
+}
+/* line 83, ../scss/_article_block.scss */
+.article-block .article-list .article-item .item-icon-content img {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 92, ../scss/_article_block.scss */
+.show-all-btn {
+  text-align: center;
+}
+/* line 95, ../scss/_article_block.scss */
+.show-all-btn p {
+  font-size: 1.5em;
+  display: inline-block;
+  border: 1px solid #058305;
+  border-radius: 10px;
+  padding: 10px;
+  color: #058305;
+  width: 150px;
+}
+/* line 104, ../scss/_article_block.scss */
+.show-all-btn p:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid;
+  border-color: #058305 #058305 transparent transparent;
+  transform: translateX(50%) rotate(45deg);
+}
+/* line 115, ../scss/_article_block.scss */
+.show-all-btn p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* line 1, ../scss/_link_block.scss */
+.link-block {
+  display: flex;
+}
+/* line 4, ../scss/_link_block.scss */
+.link-block .link-list {
+  width: 100%;
+  display: inline-flex;
+}
+/* line 8, ../scss/_link_block.scss */
+.link-block .link-list .link-item {
+  display: flex;
+  padding: 10px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  width: calc((100% - 60px)/4);
+  border: 1px solid #058305;
+  background: #058305;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 18, ../scss/_link_block.scss */
+.link-block .link-list .link-item:nth-of-type(4n) {
+  margin: 0;
+}
+/* line 22, ../scss/_link_block.scss */
+.link-block .link-list .link-item img {
+  width: 50px;
+  margin-left: 20px;
+}
+/* line 27, ../scss/_link_block.scss */
+.link-block .link-list .link-item p {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+/* line 33, ../scss/_link_block.scss */
+.link-block .link-list .link-item:hover {
+  opacity: 0.7;
+}
+
+/* line 2, ../scss/_blog_block.scss */
+.blog-block .show-all-blog {
+  text-align: right;
+}
+/* line 5, ../scss/_blog_block.scss */
+.blog-block .show-all-blog:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid;
+  border-color: #058305 #058305 transparent transparent;
+  transform: translateX(50%) rotate(45deg);
+}
+/* line 17, ../scss/_blog_block.scss */
+.blog-block .blog-inner {
+  display: flex;
+}
+/* line 20, ../scss/_blog_block.scss */
+.blog-block .blog-inner a {
+  text-decoration: none;
+  color: black;
+}
+/* line 26, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner-pic:hover {
+  opacity: 0.7;
+}
+/* line 31, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__left {
+  width: 50%;
+  margin-right: 20px;
+}
+/* line 36, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner-info {
+  padding: 10px;
+}
+/* line 39, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner-info .blog-inner-title {
+  font-weight: bold;
+}
+/* line 43, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner-info .blog-inner-date {
+  opacity: 0.6;
+}
+/* line 48, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right {
+  width: 50%;
+}
+/* line 51, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 56, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-item {
+  width: calc((100% - 20px)/2);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/* line 61, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-item .blog-inner-info {
+  background: #f7f7f9;
+}
+/* line 64, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-item .blog-inner-info .blog-inner-title {
+  font-size: 14px;
+}
+/* line 69, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-item .blog-inner-pic {
+  height: 200px;
+}
+/* line 73, ../scss/_blog_block.scss */
+.blog-block .blog-inner .blog-inner__right .blog-inner-item:nth-of-type(2n) {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+/* line 2, ../scss/_district_block.scss */
+.district-block .district-inner {
+  display: flex;
+}
+/* line 5, ../scss/_district_block.scss */
+.district-block .district-inner .district-list {
+  margin: 30px 0;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 11, ../scss/_district_block.scss */
+.district-block .district-inner .district-list .district-item {
+  margin: 10px;
+  width: calc((100% - 90px)/3);
+}
+/* line 15, ../scss/_district_block.scss */
+.district-block .district-inner .district-list .district-item a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+/* line 22, ../scss/_district_block.scss */
+.district-block .district-inner .district-list .district-item:hover a {
+  color: #058305;
+}
+/* line 29, ../scss/_district_block.scss */
+.district-block .district-inner .subscribe-form {
+  width: 30%;
+  text-align: center;
+  border: 2px solid #058305;
+}
+/* line 34, ../scss/_district_block.scss */
+.district-block .district-inner .subscribe-form .form-title {
+  line-height: 1.5;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #058305;
+}
+/* line 43, ../scss/_district_block.scss */
+.district-block .district-inner .subscribe-form .form-content {
+  padding: 20px;
+  display: inline-grid;
+}
+/* line 47, ../scss/_district_block.scss */
+.district-block .district-inner .subscribe-form .form-content input {
+  height: 40px;
+  font-size: smaller;
+  margin-bottom: 15px;
+  border: 1px solid #058305;
+  text-align: center;
+}
+/* line 55, ../scss/_district_block.scss */
+.district-block .district-inner .subscribe-form .form-content button {
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+  border: 1px solid #058305;
+  text-align: center;
+  background-color: #058305;
+  font-family: 'Roboto Condensed', sans-serif;
+}

@@ -1,0 +1,59 @@
+/* ======================= VARIABLES ====== */
+@font-face {
+  font-family: "RobotoCondensed";
+  src: fonts/RobotoCondensed;
+}
+/* line 24, ../scss/styles.scss */
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+/* line 28, ../scss/styles.scss */
+.container {
+  margin: 0 30px;
+}
+
+/* line 31, ../scss/styles.scss */
+.mg-b-10 {
+  margin-bottom: 10px;
+}
+
+/* line 34, ../scss/styles.scss */
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+
+/* line 37, ../scss/styles.scss */
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+/* line 41, ../scss/styles.scss */
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+
+/* line 45, ../scss/styles.scss */
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+
+/* line 49, ../scss/styles.scss */
+.mg-b-50 {
+  margin-bottom: 50px;
+}
+
+/* line 53, ../scss/styles.scss */
+.mg-b-60 {
+  margin-bottom: 60px;
+}
+
+/* line 57, ../scss/styles.scss */
+.mg-b-70 {
+  margin-bottom: 70px;
+}
+
+/* line 61, ../scss/styles.scss */
+.mg-b-80 {
+  margin-bottom: 80px;
+}

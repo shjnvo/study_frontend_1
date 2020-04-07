@@ -1,0 +1,63 @@
+@charset 'utf-8';
+@import "compass";
+
+/* ======================= VARIABLES ====== */
+$get_img: "../images/";
+
+$size500:   "only screen and (max-width:500px)";
+$size640:   "only screen and (max-width:640px)";
+$size750:   "only screen and (max-width:750px)";
+$size840:   "only screen and (max-width:840px)";
+$size960:   "only screen and (max-width:960px)";
+$size1000:  "only screen and (max-width:1000px)";
+$size1024:  "only screen and (max-width:1024px)";
+$size1140:  "only screen and (max-width:1140px)";
+$size1200:  "only screen and (max-width:1200px)";
+$size1300:  "only screen and (max-width:1300px)";
+$size1440:  "only screen and (max-width:1440px)";
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: fonts/RobotoCondensed;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.container {
+  margin: 0 30px;
+}
+.mg-b-10 {
+  margin-bottom: 10px;
+}
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+
+.mg-b-50 {
+  margin-bottom: 50px;
+}
+
+.mg-b-60 {
+  margin-bottom: 60px;
+}
+
+.mg-b-70 {
+  margin-bottom: 70px;
+}
+
+.mg-b-80 {
+  margin-bottom: 80px;
+}

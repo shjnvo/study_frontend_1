@@ -1,0 +1,81 @@
+main {
+  section {
+    position: relative;
+    width: 100%;
+
+    .search-image-block_cover {
+      background: url("../images/hinh_6.jpg") center center no-repeat;
+      height: 450px;
+      background-size: cover;
+      opacity: 0.8;
+    }
+    .search-inner {
+      width: 70%;
+      height: 200px;
+      background: #ffffff;
+      margin: auto;
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      form {
+        margin-top: 55px;
+      }
+    }
+    .search-input {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 40px;
+      height: 40px;
+
+      input:focus {
+        outline: none;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid $gree;
+        padding-left: 15px;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      button {
+        width: 25%;
+        background: $gree;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid $gree;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    .search_advance {
+      display: flex;
+
+      .search_advance_item {
+        margin: auto;
+        font-weight: bold;
+      }
+
+      .search_advance_item:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        left: 10px;
+        top: -9px;
+        position: relative;
+        border: 2px solid;
+        border-color: $gree $gree transparent transparent;
+        transform: translateY(50%) rotate(135deg);
+      }
+    }
+  }
+}

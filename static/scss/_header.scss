@@ -1,8 +1,11 @@
-header {
+.header {
   align-items: center;
   display: inline-flex;
-  width: 100%;
-  margin-bottom: 40px;
+
+  .for-mobile {
+    display: none;
+  }
+
   img {
     width: 225px;
   }
@@ -17,5 +20,68 @@ header {
     margin-left: 30px;
     font-size: 30px;
     color: #dedcdc
+  }
+}
+
+@media #{$size840} {
+  .header {
+    .for-pc {
+      display: none;
+    }
+
+    .for-mobile {
+      display: block;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: $gree;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 46px;
+        margin-left: 50px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+
+      ul {
+        flex-direction: column;
+        line-height: 1.5em;
+        color: white;
+        font-size: 24px
+      }
+    }
+
+
+
+    img {
+      margin: auto;
+      width: 100%;
+    }
+
+    i.fa-bars {
+      font-size: 36px;
+      color: $gree
+    }
   }
 }

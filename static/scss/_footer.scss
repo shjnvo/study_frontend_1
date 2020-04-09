@@ -58,3 +58,17 @@
     }
   }
 }
+
+@media #{$size840} {
+  .footer-inner {
+    display: block;
+
+    .footer-list {
+      width: 100%;
+
+      .footer-contact {
+        padding-left: 0;
+      }
+    }
+  }
+}

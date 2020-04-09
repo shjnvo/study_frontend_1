@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="ja">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="static/stylesheets/styles.css" media="all">
     <link rel="stylesheet" href="static/stylesheets/reset.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="static/javascripts/application.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header class="mg-b-40">
-        <img src="static/images/logo-01.png">
+    <nav class="header mg-b-40 container">
+      <a href="javascript:void(0);" class="openbtn for-mobile" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="mysidebar" class="sidebar for-mobile">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
           <li>Giới Thiệu</li>
           <li>Tin Tức Thị Trường</li>
@@ -18,771 +23,852 @@
           <li>Góc Tư Vấn</li>
           <li>Liên Hệ</li>
         </ul>
-        <div class="userLogin"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-      </header>
-      <main>
-        <section class="search-box mg-b-40">
-          <div class="search-image-block_cover">
+      </div>
+      <img src="static/images/logo-01.png">
+      <ul class="for-pc">
+        <li>Giới Thiệu</li>
+        <li>Tin Tức Thị Trường</li>
+        <li>Nhà Phố Bán</li>
+        <li>Nhà Phố Cho Thuê</li>
+        <li>Thủ Tục Pháp Lý</li>
+        <li>Góc Tư Vấn</li>
+        <li>Liên Hệ</li>
+      </ul>
+      <div class="userLogin for-pc"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+    </nav>
+
+    <section class="search-box mg-b-40 container">
+      <div class="search-image-block_cover">
+      </div>
+      <div class="search-inner">
+        <form>
+          <div class="search-option for-mobile mg-b-20">
+            <label for="buy" class="buy-option">
+              Mua
+              <input id="buy" type="radio" name="search_option">
+            </label>
+            <label for="rent" class="rent-option">
+              Thue
+              <input id="rent" type="radio" name="search_option">
+            </label>
           </div>
-          <div class="search-inner">
-            <form>
-              <div class="search-input">
-                <input type="text" placeholder="Nhập địa chỉ tiềm kiếm" name="search-text">
-                <button><i class="fa fa-search"></i>Tìm Kiếm</button>
+          <div class="search-input">
+            <input type="text" placeholder="Nhập địa chỉ tiềm kiếm" name="search-text">
+            <button class="for-pc"><i class="fa fa-search"></i>Tìm Kiếm</button>
+            <button class="for-mobile"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        <div class="search_advance for-pc">
+          <div class="search_advance_item">Nhu Cầu</div>
+          <div class="search_advance_item">Loại Hình</div>
+          <div class="search_advance_item">QUận</div>
+          <div class="search_advance_item">Diện Tích</div>
+          <div class="search_advance_item">Mức Giá</div>
+        </div>
+        <div class="for-mobile search_advance">
+          <div class="search_advance_item">Nhu Cầu</div>
+          <div class="search_advance_item">QUận</div>
+          <div class="search_advance_item">Diện Tích</div>
+          <div class="search_advance_item">Mức Giá</div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="article-block mg-b-40">
+        <p class="article-title mg-b-40">Nhà Phố Bán</p>
+        <ul class="article-list">
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
               </div>
-            </form>
-            <div class="search_advance">
-              <div class="search_advance_item">Nhu Cầu</div>
-              <div class="search_advance_item">Loại Hình</div>
-              <div class="search_advance_item">QUận</div>
-              <div class="search_advance_item">Diện Tích</div>
-              <div class="search_advance_item">Mức Giá</div>
-            </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="show-all-btn for-pc">
+          <p>Xem tất cả</p>
+        </div>
+        <div class="for-mobile extend-btn">
+          <p>Mở Rộng</p>
+        </div>
+      </section>
+      <section class="article-block mg-b-80">
+        <p class="article-title mg-b-40">Nhà Phố Cho Thuê</p>
+        <ul class="article-list">
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="article-item">
+            <a href="#">
+              <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
+                <span class="article-item-price">100 tỷ</span>
+              </div>
+              <div class="article-item-inner">
+                <div class="article-item-info">
+                  <span class="article-item-info__acreage">200m<sup>2</sup></span>
+                  <span class="article-item-info__district">Quận 1</span>
+                </div>
+                <div class="article-item-title">
+                  Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
+                </div>
+                <ul class="article-item-icon">
+                  <li class="item-icon-content">
+                    <img src="static/images/bed.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/bathtub.png">
+                    3
+                  </li>
+                  <li class="item-icon-content">
+                    <img src="static/images/location.png">
+                    Đ.Bắc
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="show-all-btn for-pc">
+          <p>Xem tất cả</p>
+        </div>
+        <div class="for-mobile extend-btn">
+          <p>Mở Rộng</p>
+        </div>
+      </section>
+
+      <section class="link-block mg-b-80">
+        <ul class="link-list">
+          <li class="link-item">
+            <img src="static/images/star.png">
+            <p>Phong thủy nhà phố</p>
+          </li>
+          <li class="link-item">
+            <img src="static/images/alert.png">
+            <p>Lưu ý khi mua nhà</p>
+          </li>
+          <li class="link-item">
+            <img src="static/images/message.png">
+            <p>Chuyên gia tư vấn</p>
+          </li>
+          <li class="link-item">
+            <img src="static/images/armchair.png">
+            <p>Thiết kế nội thất</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="article-block blog-block mg-b-40">
+        <p class="article-title">TIN TỨC THỊ TRƯỜNG</p>
+        <p class="show-all-blog mg-b-20 for-pc">Xem tất cả</p>
+        <div class="blog-inner">
+          <div class="blog-inner__left">
+            <a href="#" class="blog-inner__link">
+              <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover; height: 400px;">
+              </div>
+              <div class="blog-inner-info">
+                <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                <div class="blog-inner-description">
+                  2020 dự báo sẽ là năm không dễ dàng của thị trường bất động sản.
+                  Với nhà đầu tư, việc kiếm tiền nhờ lướt sóng nhanh sẽ không còn
+                  "ăn may" như trước, thay vào đó là những bước đi thận trọng và
+                  phải có chiến lược.
+                </div>
+              </div>
+            </a>
           </div>
-        </section>
-        <section class="article-block mg-b-40">
-          <p class="article-title mg-b-40">Nhà Phố Bán</p>
-          <ul class="article-list">
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="show-all-btn">
-            <p>Xem tất cả</p>
-          </div>
-        </section>
-        <section class="article-block mg-b-80">
-          <p class="article-title mg-b-40">Nhà Phố Cho Thuê</p>
-          <ul class="article-list">
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-            <li class="article-item">
-              <a href="#">
-                <div class="article-item-pic" style="background: url('static/images/hinh_4.jpg') center center no-repeat; background-size: cover;">
-                  <span class="article-item-price">100 tỷ</span>
-                </div>
-                <div class="article-item-inner">
-                  <div class="article-item-info">
-                    <span class="article-item-info__acreage">200m<sup>2</sup></span>
-                    <span class="article-item-info__district">Quận 1</span>
-                  </div>
-                  <div class="article-item-title">
-                    Bán nhà mặt tiền Đường Nguyễn Thị Minh Khai, Quận 1, 4 phòng ngủ, gần CGV
-                  </div>
-                  <ul class="article-item-icon">
-                    <li class="item-icon-content">
-                      <img src="static/images/bed.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/bathtub.png">
-                      3
-                    </li>
-                    <li class="item-icon-content">
-                      <img src="static/images/location.png">
-                      Đ.Bắc
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <div class="show-all-btn">
-            <p>Xem tất cả</p>
-          </div>
-        </section>
-        <section class="link-block mg-b-80">
-          <ul class="link-list">
-            <li class="link-item">
-              <img src="static/images/star.png">
-              <p>Phong thủy nhà phố</p>
-            </li>
-            <li class="link-item">
-              <img src="static/images/alert.png">
-              <p>Lưu ý khi mua nhà</p>
-            </li>
-            <li class="link-item">
-              <img src="static/images/message.png">
-              <p>Chuyên gia tư vấn</p>
-            </li>
-            <li class="link-item">
-              <img src="static/images/armchair.png">
-              <p>Thiết kế nội thất</p>
-            </li>
-          </ul>
-        </section>
-        <section class="article-block blog-block mg-b-40">
-          <p class="article-title">TIN TỨC THỊ TRƯỜNG</p>
-          <p class="show-all-blog mg-b-20">Xem tất cả</p>
-          <div class="blog-inner">
-            <div class="blog-inner__left">
-              <a href="#" class="blog-inner__link">
-                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover; height: 400px;">
+          <div class="blog-inner__right for-pc">
+            <ul class="blog-inner-list">
+              <li class="blog-inner-item">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
                 </div>
                 <div class="blog-inner-info">
                   <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
                   <div class="blog-inner-date mg-b-10">07/04/2020</div>
-                  <div class="blog-inner-description">
-                    2020 dự báo sẽ là năm không dễ dàng của thị trường bất động sản.
-                    Với nhà đầu tư, việc kiếm tiền nhờ lướt sóng nhanh sẽ không còn
-                    "ăn may" như trước, thay vào đó là những bước đi thận trọng và
-                    phải có chiến lược.
-                  </div>
                 </div>
-              </a>
+              </li>
+              <li class="blog-inner-item">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+              <li class="blog-inner-item">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+              <li class="blog-inner-item">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="blog-inner__bottom for-mobile">
+            <ul class="blog-inner-list">
+              <li class="blog-inner-item mg-b-20">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+              <li class="blog-inner-item mg-b-20">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+              <li class="blog-inner-item mg-b-20">
+                <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
+                </div>
+                <div class="blog-inner-info">
+                  <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
+                  <div class="blog-inner-date mg-b-10">07/04/2020</div>
+                </div>
+              </li>
+            </ul>
+            <div class="for-mobile extend-btn">
+              <p>Xem Thêm</p>
             </div>
-            <div class="blog-inner__right">
-              <ul class="blog-inner-list">
-                <li class="blog-inner-item">
-                  <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
-                  </div>
-                  <div class="blog-inner-info">
-                    <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
-                    <div class="blog-inner-date mg-b-10">07/04/2020</div>
-                  </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="mg-b-80">
+
+      <section class="district-block article-block mg-b-80">
+        <div class="subscribe-form for-mobile">
+          <form>
+            <div class="form-title">
+              <p>ĐĂNG KÝ THÔNG TIN ĐỂ NHẬN TƯ VẤN MIỄN PHÍ</p>
+            </div>
+            <div class="form-content">
+              <input type="text" placeholder="Họ và Tên">
+              <input type="text" placeholder="Số Điện Thoại">
+              <input type="text" placeholder="Email">
+              <button class="form-submit-btn">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+        <p class="article-title">Nhà Phố Theo Khu Vực</p>
+        <div class="district-inner">
+          <ul class="district-list">
+            <li class="district-item">
+              <a href="#">Quận 1</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 7</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Tân Bình</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 2</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 8</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Phú Nhuận</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 3</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 9</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Tân Phú</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 4</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 10</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Bình Thạnh</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 5</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 11</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Bình Tân</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 6</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận 12</a>
+            </li>
+            <li class="district-item">
+              <a href="#">Quận Gò Vấp</a>
+            </li>
+          </ul>
+          <div class="subscribe-form for-pc">
+            <form>
+              <div class="form-title">
+                <p>ĐĂNG KÝ THÔNG TIN ĐỂ NHẬN TƯ VẤN MIỄN PHÍ</p>
+              </div>
+              <div class="form-content">
+                <input type="text" placeholder="Họ và Tên">
+                <input type="text" placeholder="Số Điện Thoại">
+                <input type="text" placeholder="Email">
+                <button class="form-submit-btn">Đăng ký</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <hr class="mg-b-80">
+
+      <footer class="mg-b-80">
+        <div class="footer-inner">
+          <div class="footer-list">
+            <div class="footer-intro">
+              <a href="#">
+                <img src="static/images/logo-01.png" style="height: 100px;">
+              </a>
+              <div class="description">
+                Thị trường nhà phố là chuyên trang cập nhật tin tức về thị trường Bất Động Sản Nhà Phố khu vực trung tâm thành phố, mang đến những đánh giá khách quan về thị trường cùng những chuyên gia sắc bén, thông tin chính xác để người mua và người bán tìm được điểm chung trong việc mua bán Bất Động Sản
+              </div>
+            </div>
+          </div>
+          <div class="footer-list">
+            <div class="footer-contact">
+              <div class="footer-contact__title">
+                <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+              </div>
+              <div class="footer-contact__info mg-b-40">
+                <div class="footer-contact-item">
+                  <p>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    68 Nguyễn Huệ, P.Bến Nghé, Quận 1
+                  </p>
+                </div>
+                <div class="footer-contact-item">
+                  <p>
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    nhaphotrungtam@gmail.com
+                  </p>
+                </div>
+                <div class="footer-contact-item">
+                  <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    0933 787 399
+                  </p>
+                </div>
+              </div>
+              <div class="footer-social">
+                <a href="#"><img src="static/images/facebook.png" alt=""></a>
+                <a href="#"><img src="static/images/zalo.png" alt=""></a>
+                <a href="#"><img src="static/images/youtube.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-list for-pc" style="width: 170px;">
+            <div class="footer-list-category">
+              <div class="footer-list-category__title">
+                <h1>DANH MỤC</h1>
+              </div>
+              <ul class="footer-category__list">
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Trang chủ</a>
                 </li>
-                <li class="blog-inner-item">
-                  <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
-                  </div>
-                  <div class="blog-inner-info">
-                    <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
-                    <div class="blog-inner-date mg-b-10">07/04/2020</div>
-                  </div>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Tin tức thị trường</a>
                 </li>
-                <li class="blog-inner-item">
-                  <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
-                  </div>
-                  <div class="blog-inner-info">
-                    <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
-                    <div class="blog-inner-date mg-b-10">07/04/2020</div>
-                  </div>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Nhà phố bán</a>
                 </li>
-                <li class="blog-inner-item">
-                  <div class="blog-inner-pic" style="background: url('static/images/hinh_5.jpg') center center no-repeat; background-size: cover;">
-                  </div>
-                  <div class="blog-inner-info">
-                    <div class="blog-inner-title mg-b-10">Đầu tư bất động sản năm 2020: 3 nước đi giúp tăng khả năng chốt lời</div>
-                    <div class="blog-inner-date mg-b-10">07/04/2020</div>
-                  </div>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Nhà phố cho thuê</a>
+                </li>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Thông tin pháp lý</a>
+                </li>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Góc tư vấn</a>
+                </li>
+                <li class="footer-category__item">
+                  <a href="#" class="footer-category__item--link">Liên hệ</a>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-
-        <hr class="mg-b-80">
-
-        <section class="district-block article-block mg-b-80">
-          <p class="article-title">Nhà Phố Theo Khu Vực</p>
-          <div class="district-inner">
-            <ul class="district-list">
-              <li class="district-item">
-                <a href="#">Quận 1</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 7</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Tân Bình</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 2</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 8</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Phú Nhuận</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 3</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 9</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Tân Phú</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 4</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 10</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Bình Thạnh</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 5</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 11</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Bình Tân</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 6</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận 12</a>
-              </li>
-              <li class="district-item">
-                <a href="#">Quận Gò Vấp</a>
-              </li>
-            </ul>
-            <div class="subscribe-form">
-              <form>
-                <div class="form-title">
-                  <p>ĐĂNG KÝ THÔNG TIN ĐỂ NHẬN TƯ VẤN MIỄN PHÍ</p>
-                </div>
-                <div class="form-content">
-                  <input type="text" placeholder="Họ và Tên">
-                  <input type="text" placeholder="Số Điện Thoại">
-                  <input type="text" placeholder="Email">
-                  <button class="form-submit-btn">Đăng ký</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <hr class="mg-b-80">
-
-        <footer class="mg-b-80">
-          <div class="footer-inner">
-            <div class="footer-list">
-              <div class="footer-intro">
-                <a href="#">
-                  <img src="static/images/logo-01.png" style="height: 100px;">
-                </a>
-                <div class="description">
-                  Thị trường nhà phố là chuyên trang cập nhật tin tức về thị trường Bất Động Sản Nhà Phố khu vực trung tâm thành phố, mang đến những đánh giá khách quan về thị trường cùng những chuyên gia sắc bén, thông tin chính xác để người mua và người bán tìm được điểm chung trong việc mua bán Bất Động Sản
-                </div>
+          <div class="footer-list">
+            <div class="footer-list-fanpage">
+              <div class="footer-list-fanpage__title">
+                <h1>FANPAGE</h1>
               </div>
-            </div>
-            <div class="footer-list">
-              <div class="footer-contact">
-                <div class="footer-contact__title">
-                  <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
-                </div>
-                <div class="footer-contact__info mg-b-40">
-                  <div class="footer-contact-item">
-                    <p>
-                      <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                      68 Nguyễn Huệ, P.Bến Nghé, Quận 1
-                    </p>
-                  </div>
-                  <div class="footer-contact-item">
-                    <p>
-                      <i class="fa fa-id-card" aria-hidden="true"></i>
-                      nhaphotrungtam@gmail.com
-                    </p>
-                  </div>
-                  <div class="footer-contact-item">
-                    <p>
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                      0933 787 399
-                    </p>
-                  </div>
-                </div>
-                <div class="footer-social">
-                  <a href="#"><img src="static/images/facebook.png" alt=""></a>
-                  <a href="#"><img src="static/images/zalo.png" alt=""></a>
-                  <a href="#"><img src="static/images/youtube.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <div class="footer-list" style="width: 250px;">
-              <div class="footer-list-category">
-                <div class="footer-list-category__title">
-                  <h1>DANH MỤC</h1>
-                </div>
-                <ul class="footer-category__list">
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Trang chủ</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Tin tức thị trường</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Nhà phố bán</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Nhà phố cho thuê</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Thông tin pháp lý</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Góc tư vấn</a>
-                  </li>
-                  <li class="footer-category__item">
-                    <a href="#" class="footer-category__item--link">Liên hệ</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-list">
-              <div class="footer-list-fanpage">
-                <div class="footer-list-fanpage__title">
-                  <h1>FANPAGE</h1>
-                </div>
-                <div class="footer-list-fanpage__link">
-                 <!--  <iframe class="active" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNh%C3%A0-Ph%E1%BB%91-Trung-T%C3%A2m-1066400303567669%2F&amp;tabs=timeline&amp;width=210&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=728256060858986" width="210" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-                  <iframe class="passive" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNh%C3%A0-Ph%E1%BB%91-Trung-T%C3%A2m-1066400303567669%2F&amp;tabs=timeline&amp;width=340&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=728256060858986" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
+              <div class="footer-list-fanpage__link">
+               <!--  <iframe class="active" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNh%C3%A0-Ph%E1%BB%91-Trung-T%C3%A2m-1066400303567669%2F&amp;tabs=timeline&amp;width=210&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=728256060858986" width="210" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+                <iframe class="passive" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNh%C3%A0-Ph%E1%BB%91-Trung-T%C3%A2m-1066400303567669%2F&amp;tabs=timeline&amp;width=340&amp;height=200&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=728256060858986" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               </div>
             </div>
           </div>
-        </footer>
-      </main>
-    </div>
+        </div>
+      </footer>
+    </main>
   </body>
   <footer></footer>
 </html>

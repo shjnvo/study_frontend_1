@@ -36,3 +36,29 @@
     }
   }
 }
+
+@media #{$size840} {
+  .link-block {
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .link-item {
+      width: calc((100% - 65px)/2) !important;
+      margin-bottom: 20px !important;
+      &:nth-of-type(2n){
+        margin-right: 0;
+      }
+
+      img {
+        margin-left: 0 !important;
+        width: 25px !important;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

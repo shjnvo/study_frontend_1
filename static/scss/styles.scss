@@ -3,6 +3,7 @@
 
 /* ======================= VARIABLES ====== */
 $get_img: "../images/";
+$gree:#058305;
 
 $size500:   "only screen and (max-width:500px)";
 $size640:   "only screen and (max-width:640px)";
@@ -25,21 +26,28 @@ body {
   font-family: 'Roboto Condensed', sans-serif !important;
 }
 
+@import "header";
+@import "footer";
+@import "search_box";
+@import "article_block";
+@import "link_block";
+@import "blog_block";
+@import "district_block";
+
 .container {
   margin: 0 30px;
 }
+
 .mg-b-10 {
   margin-bottom: 10px;
 }
+
 .mg-b-20 {
   margin-bottom: 20px;
 }
+
 .mg-b-30 {
   margin-bottom: 30px;
-}
-
-.mg-b-40 {
-  margin-bottom: 40px;
 }
 
 .mg-b-40 {
@@ -61,3 +69,4 @@ body {
 .mg-b-80 {
   margin-bottom: 80px;
 }
+

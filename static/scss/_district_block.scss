@@ -25,45 +25,65 @@
         }
       }
     }
+  }
 
-    .subscribe-form {
-      width: 30%;
-      text-align: center;
-      border: 2px solid $gree;
+  .subscribe-form {
+    width: 30%;
+    text-align: center;
+    border: 2px solid $gree;
 
-      .form-title {
-        line-height: 1.5;
-        padding: 20px;
+    .form-title {
+      line-height: 1.5;
+      padding: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: #058305;
+    }
+
+    .form-content {
+      padding: 20px;
+      display: inline-grid;
+
+      input {
+        height: 40px;
+        font-size: smaller;
+        margin-bottom: 15px;
+        border: 1px solid #058305;
+        text-align: center;
+      }
+
+      button {
+        height: 40px;
+        cursor: pointer;
         color: #fff;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 19px;
+        border: 1px solid #058305;
+        text-align: center;
         background-color: #058305;
+        font-family: 'Roboto Condensed', sans-serif;
       }
+    }
+  }
+}
 
-      .form-content {
-        padding: 20px;
-        display: inline-grid;
+@media #{$size840} {
+  .district-block {
+    .district-inner {
+      margin-top: 20px;
+      display: block;
 
-        input {
-          height: 40px;
-          font-size: smaller;
-          margin-bottom: 15px;
-          border: 1px solid #058305;
-          text-align: center;
-        }
 
-        button {
-          height: 40px;
-          cursor: pointer;
-          color: #fff;
-          font-weight: bold;
-          font-size: 19px;
-          border: 1px solid #058305;
-          text-align: center;
-          background-color: #058305;
-          font-family: 'Roboto Condensed', sans-serif;
-        }
+      .district-list {
+        width: 100%;
+        margin-right: 0;
       }
+    }
+
+    .subscribe-form {
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 }

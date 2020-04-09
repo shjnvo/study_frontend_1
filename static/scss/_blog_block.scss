@@ -78,3 +78,40 @@
     }
   }
 }
+
+@media #{$size840} {
+  .blog-block {
+    .blog-inner {
+      margin-top: 20px;
+      display: block;
+
+      .blog-inner__left {
+        width: 100% ;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .blog-inner__bottom {
+        .blog-inner-pic {
+          float: left;
+          width: 120px;
+          height: 100px;
+        }
+
+        .blog-inner-list {
+          display: flex;
+          flex-direction: column;
+
+          .blog-inner-info {
+            background: #f7f7f9;
+            padding: 10px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+      }
+    }
+  }
+}

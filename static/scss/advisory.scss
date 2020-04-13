@@ -1,0 +1,83 @@
+.advisory-inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  .advisory-card {
+    width: calc((100% - 80px)/2);
+    margin-bottom: 40px;
+    margin-right: 40px;
+    background-color: #efefef;
+    padding: 10px;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    .advisory-card-header {
+      display: inline-flex;
+
+      .advisory-card-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+      }
+
+      .advisory-card-info {
+        line-height: 1.5em;
+        margin-left: 10px;
+      }
+
+      .advisory-name {
+        font-size: 24px;
+        opacity: 0.7;
+      }
+
+      .advisory-position {
+        color: $gree;
+      }
+
+      .social-icon {
+        img {
+          width: 25px;
+          filter: grayscale(100%);
+
+          &:hover {
+            filter: none;
+          }
+        }
+      }
+    }
+
+    .advisory-card-contact {
+      line-height: 2.5em;
+
+      .advisory-contact-item {
+        width: 100%;
+        display: inline-block;
+
+        .fa {
+          width: 20px;
+          margin-right: 20px;
+          color: $gree;
+        }
+      }
+    }
+
+    hr {
+      display: inline-block;
+      border-color: $gree;
+      width: 100px;
+    }
+  }
+}
+
+@media #{$size840} {
+  .advisory-inner {
+    flex-direction: column;
+
+    .advisory-card {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}

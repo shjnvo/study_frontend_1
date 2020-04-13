@@ -33,9 +33,16 @@ body {
 @import "link_block";
 @import "blog_block";
 @import "district_block";
+@import "advisory";
+@import "legal_records";
 
 .container {
   margin: 0 30px;
+}
+
+.breadcrumb {
+  background-color: #dedbdb;
+  padding: 10px;
 }
 
 .mg-b-10 {

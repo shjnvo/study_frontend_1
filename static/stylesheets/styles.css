@@ -263,39 +263,44 @@ section.search-box .for-mobile {
     display: none !important;
   }
 
-  /* line 91, ../scss/_search_box.scss */
+  /* line 92, ../scss/_search_box.scss */
+  section.search-box .for-mobile {
+    display: block;
+  }
+
+  /* line 97, ../scss/_search_box.scss */
   .search-box.container {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 95, ../scss/_search_box.scss */
+  /* line 101, ../scss/_search_box.scss */
   .search-box.container .search-image-block_cover {
     height: 350px;
   }
-  /* line 99, ../scss/_search_box.scss */
+  /* line 105, ../scss/_search_box.scss */
   .search-box.container .search_advance {
     flex-wrap: wrap;
     display: flex;
   }
-  /* line 103, ../scss/_search_box.scss */
+  /* line 109, ../scss/_search_box.scss */
   .search-box.container .search_advance .search_advance_item {
     width: 50%;
     text-align: center;
     margin-bottom: 15px;
   }
-  /* line 110, ../scss/_search_box.scss */
+  /* line 116, ../scss/_search_box.scss */
   .search-box.container .search-inner {
     width: 90%;
   }
-  /* line 113, ../scss/_search_box.scss */
+  /* line 119, ../scss/_search_box.scss */
   .search-box.container .search-inner form {
     margin-top: 35px;
   }
-  /* line 116, ../scss/_search_box.scss */
+  /* line 122, ../scss/_search_box.scss */
   .search-box.container .search-inner form .search-input {
     margin-bottom: 15px;
   }
-  /* line 121, ../scss/_search_box.scss */
+  /* line 127, ../scss/_search_box.scss */
   .search-box.container .search-inner .search-option {
     text-align: center;
     display: block;
@@ -306,23 +311,23 @@ section.search-box .for-mobile {
     -ms-user-select: none;
     user-select: none;
   }
-  /* line 131, ../scss/_search_box.scss */
+  /* line 137, ../scss/_search_box.scss */
   .search-box.container .search-inner .search-option label {
     border: 1px solid #058305;
     padding: 5px 10px;
     color: white;
   }
-  /* line 137, ../scss/_search_box.scss */
+  /* line 143, ../scss/_search_box.scss */
   .search-box.container .search-inner .search-option .buy-option {
     border-radius: 10px 0 0 10px;
     background-color: #058305;
   }
-  /* line 142, ../scss/_search_box.scss */
+  /* line 148, ../scss/_search_box.scss */
   .search-box.container .search-inner .search-option .rent-option {
     border-radius: 0 10px 10px 0;
     color: #058305;
   }
-  /* line 147, ../scss/_search_box.scss */
+  /* line 153, ../scss/_search_box.scss */
   .search-box.container .search-inner .search-option input {
     position: absolute;
     opacity: 0;
@@ -765,47 +770,338 @@ section.search-box .for-mobile {
     margin-bottom: 20px;
   }
 }
-/* line 37, ../scss/styles.scss */
+/* line 1, ../scss/advisory.scss */
+.advisory-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 5, ../scss/advisory.scss */
+.advisory-inner .advisory-card {
+  width: calc((100% - 80px)/2);
+  margin-bottom: 40px;
+  margin-right: 40px;
+  background-color: #efefef;
+  padding: 10px;
+}
+/* line 12, ../scss/advisory.scss */
+.advisory-inner .advisory-card:nth-of-type(2n) {
+  margin-right: 0;
+}
+/* line 16, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header {
+  display: inline-flex;
+}
+/* line 19, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .advisory-card-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+/* line 25, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .advisory-card-info {
+  line-height: 1.5em;
+  margin-left: 10px;
+}
+/* line 30, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .advisory-name {
+  font-size: 24px;
+  opacity: 0.7;
+}
+/* line 35, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .advisory-position {
+  color: #058305;
+}
+/* line 40, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .social-icon img {
+  width: 25px;
+  filter: grayscale(100%);
+}
+/* line 44, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-header .social-icon img:hover {
+  filter: none;
+}
+/* line 51, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-contact {
+  line-height: 2.5em;
+}
+/* line 54, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-contact .advisory-contact-item {
+  width: 100%;
+  display: inline-block;
+}
+/* line 58, ../scss/advisory.scss */
+.advisory-inner .advisory-card .advisory-card-contact .advisory-contact-item .fa {
+  width: 20px;
+  margin-right: 20px;
+  color: #058305;
+}
+/* line 66, ../scss/advisory.scss */
+.advisory-inner .advisory-card hr {
+  display: inline-block;
+  border-color: #058305;
+  width: 100px;
+}
+
+@media only screen and (max-width: 840px) {
+  /* line 75, ../scss/advisory.scss */
+  .advisory-inner {
+    flex-direction: column;
+  }
+  /* line 78, ../scss/advisory.scss */
+  .advisory-inner .advisory-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 1, ../scss/legal_records.scss */
+.legal-block {
+  display: flex;
+  flex-wrap: column wrap;
+}
+/* line 5, ../scss/legal_records.scss */
+.legal-block h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* line 10, ../scss/legal_records.scss */
+.legal-block .legal-inner {
+  width: 70%;
+}
+/* line 13, ../scss/legal_records.scss */
+.legal-block .legal-inner h1 {
+  color: #058305;
+  font-weight: bold;
+}
+/* line 18, ../scss/legal_records.scss */
+.legal-block .legal-inner .legal-item-titel {
+  font-weight: bold;
+}
+/* line 21, ../scss/legal_records.scss */
+.legal-block .legal-inner .legal-item-date {
+  opacity: 0.7;
+}
+/* line 25, ../scss/legal_records.scss */
+.legal-block .legal-inner .legal-item-description {
+  opacity: 0.8;
+}
+/* line 29, ../scss/legal_records.scss */
+.legal-block .legal-inner .special-legal-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 33, ../scss/legal_records.scss */
+.legal-block .legal-inner .special-legal-content .special-legal-item {
+  width: calc(50% - 20px);
+  padding: 10px;
+}
+/* line 37, ../scss/legal_records.scss */
+.legal-block .legal-inner .special-legal-content .special-legal-item .special-legal-item-pic {
+  height: 250px;
+  margin-bottom: 10px;
+}
+/* line 44, ../scss/legal_records.scss */
+.legal-block .legal-inner .common-legal-content {
+  width: 100%;
+}
+/* line 47, ../scss/legal_records.scss */
+.legal-block .legal-inner .common-legal-content .common-legal-item {
+  display: flex;
+  padding: 10px;
+}
+/* line 51, ../scss/legal_records.scss */
+.legal-block .legal-inner .common-legal-content .common-legal-item .common-legal-item-pic {
+  width: 30%;
+}
+/* line 55, ../scss/legal_records.scss */
+.legal-block .legal-inner .common-legal-content .common-legal-item .legal-item-info {
+  padding: 20px;
+  margin: auto;
+}
+/* line 62, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination {
+  margin-left: 30px;
+}
+/* line 65, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination ul {
+  display: inline-flex;
+  font-size: 24px;
+}
+/* line 69, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination ul li {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #969696;
+}
+/* line 77, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination ul li.active {
+  background-color: #058305;
+  color: white;
+}
+/* line 82, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination ul li.next-page {
+  border: 1px solid #dcdcdc;
+}
+/* line 85, ../scss/legal_records.scss */
+.legal-block .legal-inner .pagination ul li.next-page:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  left: -4px;
+  border: 2px solid;
+  border-color: #dcdcdc #dcdcdc transparent transparent;
+  transform: rotate(45deg);
+}
+/* line 102, ../scss/legal_records.scss */
+.legal-block .news-inner {
+  width: 30%;
+}
+/* line 105, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content {
+  padding: 10px;
+}
+/* line 107, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content .news-item {
+  display: flex;
+}
+/* line 110, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content .news-item img {
+  width: 30%;
+}
+/* line 114, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content .news-item .news-info {
+  padding: 10px;
+  margin: auto;
+}
+/* line 118, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content .news-item .news-info .news-item-titel {
+  opacity: 0.7;
+  font-weight: bold;
+}
+/* line 123, ../scss/legal_records.scss */
+.legal-block .news-inner .news-content .news-item .news-info .news-item-date {
+  font-size: 14px;
+  opacity: 0.7;
+}
+/* line 131, ../scss/legal_records.scss */
+.legal-block .news-inner .subscribe-form {
+  display: flex;
+}
+/* line 134, ../scss/legal_records.scss */
+.legal-block .news-inner .subscribe-form input {
+  width: 70%;
+  font-size: 22px;
+  padding-left: 10px;
+}
+/* line 140, ../scss/legal_records.scss */
+.legal-block .news-inner .subscribe-form button {
+  width: 30%;
+  background-color: #058305;
+  border: 1px solid #058305;
+  font-size: 19px;
+  color: white;
+}
+/* line 150, ../scss/legal_records.scss */
+.legal-block .news-inner .article-content .article-item {
+  display: flex;
+}
+/* line 153, ../scss/legal_records.scss */
+.legal-block .news-inner .article-content .article-item img {
+  width: 30%;
+}
+/* line 157, ../scss/legal_records.scss */
+.legal-block .news-inner .article-content .article-item .article-info {
+  padding: 10px;
+  opacity: 0.8;
+}
+/* line 161, ../scss/legal_records.scss */
+.legal-block .news-inner .article-content .article-item .article-info .article-price {
+  color: #058305;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* line 167, ../scss/legal_records.scss */
+.legal-block .news-inner .article-content .article-item .article-info .article-district {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 840px) {
+  /* line 178, ../scss/legal_records.scss */
+  .legal-block .legal-inner {
+    width: 100%;
+  }
+  /* line 181, ../scss/legal_records.scss */
+  .legal-block .legal-inner .special-legal-content {
+    flex-direction: column;
+  }
+  /* line 184, ../scss/legal_records.scss */
+  .legal-block .legal-inner .special-legal-content .special-legal-item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  /* line 193, ../scss/legal_records.scss */
+  .legal-block .legal-inner .common-legal-content .common-legal-item {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  /* line 199, ../scss/legal_records.scss */
+  .legal-block .legal-inner .pagination {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+/* line 39, ../scss/styles.scss */
 .container {
   margin: 0 30px;
 }
 
-/* line 41, ../scss/styles.scss */
+/* line 43, ../scss/styles.scss */
+.breadcrumb {
+  background-color: #dedbdb;
+  padding: 10px;
+}
+
+/* line 48, ../scss/styles.scss */
 .mg-b-10 {
   margin-bottom: 10px;
 }
 
-/* line 45, ../scss/styles.scss */
+/* line 52, ../scss/styles.scss */
 .mg-b-20 {
   margin-bottom: 20px;
 }
 
-/* line 49, ../scss/styles.scss */
+/* line 56, ../scss/styles.scss */
 .mg-b-30 {
   margin-bottom: 30px;
 }
 
-/* line 53, ../scss/styles.scss */
+/* line 60, ../scss/styles.scss */
 .mg-b-40 {
   margin-bottom: 40px;
 }
 
-/* line 57, ../scss/styles.scss */
+/* line 64, ../scss/styles.scss */
 .mg-b-50 {
   margin-bottom: 50px;
 }
 
-/* line 61, ../scss/styles.scss */
+/* line 68, ../scss/styles.scss */
 .mg-b-60 {
   margin-bottom: 60px;
 }
 
-/* line 65, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .mg-b-70 {
   margin-bottom: 70px;
 }
 
-/* line 69, ../scss/styles.scss */
+/* line 76, ../scss/styles.scss */
 .mg-b-80 {
   margin-bottom: 80px;
 }

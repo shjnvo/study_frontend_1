@@ -88,6 +88,12 @@ section.search-box {
     display: none !important;
   }
 
+  section.search-box{
+    .for-mobile {
+      display: block;
+    }
+  }
+
   .search-box.container {
     margin-left: 0;
     margin-right: 0;

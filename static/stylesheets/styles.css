@@ -1055,53 +1055,141 @@ section.search-box .for-mobile {
     text-align: center;
   }
 }
-/* line 39, ../scss/styles.scss */
+/* line 1, ../scss/contact.scss */
+.contact-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 5, ../scss/contact.scss */
+.contact-block h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #535353;
+}
+/* line 11, ../scss/contact.scss */
+.contact-block .contact-form {
+  width: 70%;
+}
+/* line 14, ../scss/contact.scss */
+.contact-block .contact-form form {
+  padding-right: 20px;
+}
+/* line 18, ../scss/contact.scss */
+.contact-block .contact-form .row {
+  display: flex;
+}
+/* line 21, ../scss/contact.scss */
+.contact-block .contact-form .row input {
+  margin-right: 10px;
+  width: calc((100% - 10px)/2);
+  font-size: 22px;
+  line-height: 1.5em;
+  padding-left: 10px;
+}
+/* line 28, ../scss/contact.scss */
+.contact-block .contact-form .row input:nth-of-type(2) {
+  margin-right: 0;
+}
+/* line 34, ../scss/contact.scss */
+.contact-block .contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 22px;
+  resize: none;
+  line-height: 1.5em;
+  padding-left: 10px;
+}
+/* line 43, ../scss/contact.scss */
+.contact-block .contact-form button {
+  background-color: #058305;
+  border: 1px solid #058305;
+  font-size: 22px;
+  padding: 10px;
+  color: white;
+}
+/* line 52, ../scss/contact.scss */
+.contact-block .contact-info {
+  width: 30%;
+}
+/* line 55, ../scss/contact.scss */
+.contact-block .contact-info .footer-contact {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 840px) {
+  /* line 62, ../scss/contact.scss */
+  .contact-block {
+    display: block;
+  }
+  /* line 66, ../scss/contact.scss */
+  .contact-block .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 70, ../scss/contact.scss */
+  .contact-block .contact-form form {
+    padding-right: 0;
+  }
+  /* line 73, ../scss/contact.scss */
+  .contact-block .contact-form form input {
+    border: 1px solid #9c9c9c;
+  }
+  /* line 77, ../scss/contact.scss */
+  .contact-block .contact-form form textarea {
+    border: 1px solid #9c9c9c;
+  }
+  /* line 83, ../scss/contact.scss */
+  .contact-block .contact-info {
+    width: 100%;
+  }
+}
+/* line 40, ../scss/styles.scss */
 .container {
   margin: 0 30px;
 }
 
-/* line 43, ../scss/styles.scss */
+/* line 44, ../scss/styles.scss */
 .breadcrumb {
   background-color: #dedbdb;
   padding: 10px;
 }
 
-/* line 48, ../scss/styles.scss */
+/* line 49, ../scss/styles.scss */
 .mg-b-10 {
   margin-bottom: 10px;
 }
 
-/* line 52, ../scss/styles.scss */
+/* line 53, ../scss/styles.scss */
 .mg-b-20 {
   margin-bottom: 20px;
 }
 
-/* line 56, ../scss/styles.scss */
+/* line 57, ../scss/styles.scss */
 .mg-b-30 {
   margin-bottom: 30px;
 }
 
-/* line 60, ../scss/styles.scss */
+/* line 61, ../scss/styles.scss */
 .mg-b-40 {
   margin-bottom: 40px;
 }
 
-/* line 64, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
 .mg-b-50 {
   margin-bottom: 50px;
 }
 
-/* line 68, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 .mg-b-60 {
   margin-bottom: 60px;
 }
 
-/* line 72, ../scss/styles.scss */
+/* line 73, ../scss/styles.scss */
 .mg-b-70 {
   margin-bottom: 70px;
 }
 
-/* line 76, ../scss/styles.scss */
+/* line 77, ../scss/styles.scss */
 .mg-b-80 {
   margin-bottom: 80px;
 }

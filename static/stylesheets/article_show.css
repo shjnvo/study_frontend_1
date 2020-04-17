@@ -1,0 +1,104 @@
+/*
+Error: Undefined variable: "$gree".
+        on line 82 of /home/ducloi/project/dev_front_1/static/scss/article_show.scss
+
+77:       width: 30%;
+78:       padding-left: 20px;
+79: 
+80:       h2, h1 {
+81:         font-size: 22px;
+82:         color: $gree;
+83:       }
+84: 
+85:       .expert-contact {
+86:         display: flex;
+87:         align-items: center;
+
+Backtrace:
+/home/ducloi/project/dev_front_1/static/scss/article_show.scss:82
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/home/ducloi/.rbenv/versions/2.6.4/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$gree\".\A         on line 82 of /home/ducloi/project/dev_front_1/static/scss/article_show.scss\A \A 77:       width: 30%;\A 78:       padding-left: 20px;\A 79: \A 80:       h2, h1 {\A 81:         font-size: 22px;\A 82:         color: $gree;\A 83:       }\A 84: \A 85:       .expert-contact {\A 86:         display: flex;\A 87:         align-items: center;"; }

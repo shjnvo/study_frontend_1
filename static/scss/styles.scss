@@ -3,7 +3,7 @@
 
 /* ======================= VARIABLES ====== */
 $get_img: "../images/";
-$gree:#058305;
+$gree: #058305;
 
 $size500:   "only screen and (max-width:500px)";
 $size640:   "only screen and (max-width:640px)";
@@ -36,6 +36,8 @@ body {
 @import "advisory";
 @import "legal_records";
 @import "contact";
+@import "select_box";
+@import "article_show";
 
 .container {
   margin: 0 30px;

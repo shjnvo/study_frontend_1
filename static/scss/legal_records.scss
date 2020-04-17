@@ -58,45 +58,6 @@
         }
       }
     }
-
-    .pagination {
-      margin-left:  30px;
-
-      ul {
-        display: inline-flex;
-        font-size: 24px;
-
-        li {
-          width: 25px;
-          height: 25px;
-          text-align: center;
-          padding: 10px;
-          cursor: pointer;
-          color: #969696;
-
-          &.active {
-            background-color: $gree;
-            color: white;
-          }
-
-          &.next-page {
-            border: 1px solid #dcdcdc;
-
-            &:after {
-              content: "";
-              width: 10px;
-              height: 10px;
-              display: inline-block;
-              position: relative;
-              left: -4px;
-              border: 2px solid;
-              border-color: #dcdcdc #dcdcdc transparent transparent;
-              transform: rotate(45deg);
-            }
-          }
-        }
-      }
-    }
   }
 
   .news-inner {
@@ -167,6 +128,45 @@
           .article-district {
             opacity: 0.6;
           }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-left:  30px;
+
+  ul {
+    display: inline-flex;
+    font-size: 24px;
+
+    li {
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      color: #969696;
+
+      &.active {
+        background-color: $gree;
+        color: white;
+      }
+
+      &.next-page {
+        border: 1px solid #dcdcdc;
+
+        &:after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          position: relative;
+          left: -4px;
+          border: 2px solid;
+          border-color: #dcdcdc #dcdcdc transparent transparent;
+          transform: rotate(45deg);
         }
       }
     }

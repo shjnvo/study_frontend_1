@@ -38,6 +38,7 @@ body {
 @import "contact";
 @import "select_box";
 @import "article_show";
+@import "news";
 
 .container {
   margin: 0 30px;
@@ -78,5 +79,9 @@ body {
 
 .mg-b-80 {
   margin-bottom: 80px;
+}
+
+.mg-b-340 {
+  margin-bottom: 340px;
 }
 

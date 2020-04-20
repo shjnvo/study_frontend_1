@@ -1,0 +1,156 @@
+.legal-block.news-block {
+
+  .for-mobile {
+    display: none;
+  }
+
+  .pagination {
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: normal;
+
+    &:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      position: relative;
+      left: 0px;
+      top: -2px;
+      border: 2px solid;
+      border-color: #dcdcdc #dcdcdc transparent transparent;
+      transform: rotate(45deg);
+    }
+  }
+
+  .news-index-titel {
+    font-weight: bold;
+  }
+
+  .news-index {
+    line-height: 2.5em;
+    color: $gree;
+  }
+
+  .special-news-content.special-legal-content {
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+    .special-news-main {
+      width: 70%;
+
+      .special-legal-item-pic {
+        height: 400px;
+      }
+    }
+
+    .special-news-sub {
+      width: 30%;
+    }
+
+    .special-legal-item-sub-content {
+
+      .news-item {
+        display: flex;
+
+        img {
+          width: 30%
+        }
+
+        .news-info {
+          padding: 10px;
+          margin: auto;
+
+          .news-item-titel {
+            opacity: 0.7;
+            font-weight: bold;
+          }
+
+          .news-item-date {
+            font-size: 14px;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .legal-inner.news-detail-inner {
+    padding-right: 20px;
+    color: #535353;
+
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .news-detail-tags {
+      display: inline-block;
+      padding: 10px;
+      background-color: $gree;
+      color: white;
+    }
+
+    p.news-detail-content {
+      white-space: pre-line;
+      font-size: 18px;
+    }
+
+    .share-link {
+      display: table;
+      font-size: 22px;
+      border: 2px solid #a2a2a2;
+      padding: 10px;
+      opacity: 0.8;
+      margin-left: auto;
+    }
+  }
+}
+
+@media #{$size840} {
+  .legal-block.news-block {
+
+    .for-mobile {
+      display: block;
+    }
+
+    .pagination {
+      ul {
+        font-size: 18px;
+
+        li {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .special-news-content.special-legal-content {
+      display: block;
+
+      .special-news-main {
+        width: 100%;
+      }
+
+      .special-news-sub {
+        width: 100%;
+        display: inline-flex;
+
+        &-info {
+          width: 50%;
+
+          .special-legal-item-pic {
+            height: 150px;
+          }
+        }
+        &-link {
+          padding-left: 20px;
+          text-align: justify;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
